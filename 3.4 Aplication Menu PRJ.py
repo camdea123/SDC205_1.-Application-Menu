@@ -13,7 +13,10 @@ def getInput():
     for i in range(entries):
         date = input("Enter a date: ")
         temp = int(input("Enter the highest temp for the selected date: "))
-
+        
+        #Takes the entered temp from the previous input and converts it using our convertData function
+        #the name is convertData, the argument is the temp the user inputted and the return value is the
+        #temperature after being converted to Celcious using the conversion formula
         tempInCelcius = convertData(temp)
 
         print(f"\nThe following was saved at {datetime.now()}:")
